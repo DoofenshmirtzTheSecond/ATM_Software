@@ -1,0 +1,20 @@
+﻿<Page x:Class="ATM_Software.EnterAmount"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ATM_Software"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="EnterAmount" Background="White">
+
+    <Grid>
+        <TextBox x:Name="Amount" HorizontalAlignment="Left" Margin="286,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Confirm" Click="ConfirmAmount" Content="Confirm" HorizontalAlignment="Left" Margin="546,200,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Cancel" Click="CancelClick" Content="Cancel" HorizontalAlignment="Left" Margin="566,264,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Rs5000" Click="HandleAmountKey" Content="5000" Tag="5000" HorizontalAlignment="Left" Margin="61,121,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Rs500" Click="HandleAmountKey" Content="500" Tag="500" HorizontalAlignment="Left" Margin="81,220,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Rs1000" Click="HandleAmountKey" Content="1000" Tag="1000" HorizontalAlignment="Left" Margin="121,304,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Rs10000" Click="HandleAmountKey" Content="10000" Tag="10000" HorizontalAlignment="Left" Margin="121,375,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Page>
