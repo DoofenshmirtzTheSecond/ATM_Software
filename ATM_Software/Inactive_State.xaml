@@ -8,9 +8,9 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Inactive_State" Background="White" KeyDown="CardEntered">
     <Grid>
-        <Button x:Name="PromotionalImageryBtn" Click="MoveToMainPage">
+        <Button x:Name="PIBtn" Click="MoveToMainPage">
             <StackPanel>
-                <Image x:Name="PromotionalImageryImg" Stretch="Fill"/>
+                <Image x:Name="PI"/>
             </StackPanel>
         </Button>
     </Grid>

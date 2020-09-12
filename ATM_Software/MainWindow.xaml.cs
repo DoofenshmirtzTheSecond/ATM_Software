@@ -24,8 +24,16 @@ namespace ATM_Software
         public MainWindow()
         {
             InitializeComponent();
-            Inactive_State inactive_State = new Inactive_State();
-            Frame.NavigationService.Navigate(inactive_State);
+            if(this.IsFirstRun()==0)
+            {
+                SPTheme1 sPTheme1 = new SPTheme1();
+                Frame.NavigationService.Navigate(sPTheme1);
+            }
+            else
+            {
+                Inactive_State inactive_State = new Inactive_State();
+                Frame.NavigationService.Navigate(inactive_State);
+            }
         }
 
 

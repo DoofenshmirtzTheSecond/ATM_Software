@@ -63,29 +63,154 @@ namespace ATM_Software {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] _101 {
+        internal static byte[] _11111 {
             get {
-                object obj = ResourceManager.GetObject("_101", resourceCulture);
+                object obj = ResourceManager.GetObject("_11111", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to जमा राशि.
+        /// </summary>
+        internal static string Account_Balance {
+            get {
+                return ResourceManager.GetString("Account_Balance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to खाता चुनें.
+        /// </summary>
+        internal static string ActLabel {
+            get {
+                return ResourceManager.GetString("ActLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to रद्द करें.
+        /// </summary>
+        internal static string Cancel {
+            get {
+                return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to पिन परिवर्तन कन्फ़र्म करें.
+        /// </summary>
+        internal static string CcpLabel {
+            get {
+                return ResourceManager.GetString("CcpLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to पिन परिवर्तन.
+        /// </summary>
+        internal static string Change_Pin {
+            get {
+                return ResourceManager.GetString("Change_Pin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to कन्फ़र्म.
+        /// </summary>
+        internal static string Confirm {
+            get {
+                return ResourceManager.GetString("Confirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to क्रेडिट कार्ड.
+        /// </summary>
+        internal static string CreditCrd {
+            get {
+                return ResourceManager.GetString("CreditCrd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to चालू खाता.
+        /// </summary>
+        internal static string CurrentAcc {
+            get {
+                return ResourceManager.GetString("CurrentAcc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to राशी डालें.
+        /// </summary>
+        internal static string EaLabel {
+            get {
+                return ResourceManager.GetString("EaLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to पिन दर्ज करें.
+        /// </summary>
+        internal static string Enter {
+            get {
+                return ResourceManager.GetString("Enter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to पिन रीसेट करें.
+        /// </summary>
+        internal static string ForgotPin {
+            get {
+                return ResourceManager.GetString("ForgotPin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ट्रांजेक्शन चुनें.
+        /// </summary>
+        internal static string MainLable {
+            get {
+                return ResourceManager.GetString("MainLable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to मिनी स्टेटमेंट.
+        /// </summary>
+        internal static string Mini_Statement {
+            get {
+                return ResourceManager.GetString("Mini_Statement", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to बचत खाता.
+        /// </summary>
+        internal static string SavingsAcc {
+            get {
+                return ResourceManager.GetString("SavingsAcc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to आहरण.
+        /// </summary>
+        internal static string Withdrawal {
+            get {
+                return ResourceManager.GetString("Withdrawal", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] _102 {
+        internal static byte[] yess {
             get {
-                object obj = ResourceManager.GetObject("_102", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] _103 {
-            get {
-                object obj = ResourceManager.GetObject("_103", resourceCulture);
+                object obj = ResourceManager.GetObject("yess", resourceCulture);
                 return ((byte[])(obj));
             }
         }

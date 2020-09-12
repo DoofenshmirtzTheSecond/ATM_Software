@@ -117,14 +117,56 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Account_Balance" xml:space="preserve">
+    <value>जमा राशि</value>
+  </data>
+  <data name="ActLabel" xml:space="preserve">
+    <value>खाता चुनें</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>रद्द करें</value>
+  </data>
+  <data name="CcpLabel" xml:space="preserve">
+    <value>पिन परिवर्तन कन्फ़र्म करें</value>
+  </data>
+  <data name="Change_Pin" xml:space="preserve">
+    <value>पिन परिवर्तन</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>कन्फ़र्म</value>
+  </data>
+  <data name="CreditCrd" xml:space="preserve">
+    <value>क्रेडिट कार्ड</value>
+  </data>
+  <data name="CurrentAcc" xml:space="preserve">
+    <value>चालू खाता</value>
+  </data>
+  <data name="EaLabel" xml:space="preserve">
+    <value>राशी डालें</value>
+  </data>
+  <data name="Enter" xml:space="preserve">
+    <value>पिन दर्ज करें</value>
+  </data>
+  <data name="ForgotPin" xml:space="preserve">
+    <value>पिन रीसेट करें</value>
+  </data>
+  <data name="MainLable" xml:space="preserve">
+    <value>ट्रांजेक्शन चुनें</value>
+  </data>
+  <data name="Mini_Statement" xml:space="preserve">
+    <value>मिनी स्टेटमेंट</value>
+  </data>
+  <data name="SavingsAcc" xml:space="preserve">
+    <value>बचत खाता</value>
+  </data>
+  <data name="Withdrawal" xml:space="preserve">
+    <value>आहरण</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="_101" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\101.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="yess" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\yess.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="_102" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\102.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="_103" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\103.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="_11111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\11111.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

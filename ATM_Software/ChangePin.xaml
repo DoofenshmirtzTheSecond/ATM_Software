@@ -5,21 +5,23 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ATM_Software"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="1080" d:DesignWidth="1920"
       Title="ChangePin" Background="White" KeyDown="ChangePinPageControl">
 
     <Grid>
-        <TextBox x:Name="Digit1" PreviewKeyDown="ChangePinPageControl" MaxLength="1" HorizontalAlignment="Left" Margin="31,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
-        <TextBox x:Name="Digit2" PreviewKeyDown="ChangePinPageControl" MaxLength="1" HorizontalAlignment="Left" Margin="118,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
-        <TextBox x:Name="Digit3" PreviewKeyDown="ChangePinPageControl" MaxLength="1" HorizontalAlignment="Left" Margin="187,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
-        <TextBox x:Name="Digit4" PreviewKeyDown="ChangePinPageControl" MaxLength="1" HorizontalAlignment="Left" Margin="269,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
-        <TextBox x:Name="Digit1Conf" PreviewKeyDown="ChangePinPageControl" MaxLength="1" HorizontalAlignment="Left" Margin="31,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
-        <TextBox x:Name="Digit2Conf" PreviewKeyDown="ChangePinPageControl" MaxLength="1" HorizontalAlignment="Left" Margin="118,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
-        <TextBox x:Name="Digit3Conf" PreviewKeyDown="ChangePinPageControl" MaxLength="1" HorizontalAlignment="Left" Margin="187,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
-        <TextBox x:Name="Digit4Conf" PreviewKeyDown="ChangePinPageControl" MaxLength="1" HorizontalAlignment="Left" Margin="269,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
-        <Button x:Name="Confirm" Click="PinChange" Content="Confirm" HorizontalAlignment="Left" Margin="331,280,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="Cancel" Click="CancelClick" Content="Cancel" HorizontalAlignment="Left" Margin="331,347,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="StateInfo" Content="" HorizontalAlignment="Left" Margin="81,300,0,0" VerticalAlignment="Top"/>
-        <Rectangle x:Name="myRectangle" Fill="{Binding Path=FillColor}" HorizontalAlignment="Center" Height="100" Stroke="Black" VerticalAlignment="Top" Width="800"/>
+        <Image x:Name="Logo" HorizontalAlignment="Left" VerticalAlignment="Top" Height="200" Margin="1239,0,0,0" Width="200"/>
+        <Rectangle x:Name="Secondary" HorizontalAlignment="Center" VerticalAlignment="Center" Height="880" Stroke="Black" Width="1920" Margin="0,200,0,0"/>
+        <TextBox x:Name="Digit1" PreviewKeyDown="ChangePinPageControl" MaxLength="1" HorizontalAlignment="Left" Margin="600,424,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="50" BorderThickness="3" BorderBrush="Black" FontSize="30"/>
+        <TextBox x:Name="Digit2" PreviewKeyDown="ChangePinPageControl" MaxLength="1" HorizontalAlignment="Left" Margin="700,424,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="50" BorderThickness="3" BorderBrush="Black" FontSize="30"/>
+        <TextBox x:Name="Digit3" PreviewKeyDown="ChangePinPageControl" MaxLength="1" HorizontalAlignment="Left" Margin="800,424,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="50" BorderThickness="3" BorderBrush="Black" FontSize="30"/>
+        <TextBox x:Name="Digit4" PreviewKeyDown="ChangePinPageControl" MaxLength="1" HorizontalAlignment="Left" Margin="900,424,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="50" BorderThickness="3" BorderBrush="Black" FontSize="30"/>
+        <TextBox x:Name="Digit1Conf" PreviewKeyDown="ChangePinPageControl" MaxLength="1" HorizontalAlignment="Left" Margin="600,524,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="50" BorderThickness="3" BorderBrush="Black" FontSize="30"/>
+        <TextBox x:Name="Digit2Conf" PreviewKeyDown="ChangePinPageControl" MaxLength="1" HorizontalAlignment="Left" Margin="700,524,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="50" BorderThickness="3" BorderBrush="Black" FontSize="30"/>
+        <TextBox x:Name="Digit3Conf" PreviewKeyDown="ChangePinPageControl" MaxLength="1" HorizontalAlignment="Left" Margin="800,524,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="50" BorderThickness="3" BorderBrush="Black" FontSize="30"/>
+        <TextBox x:Name="Digit4Conf" PreviewKeyDown="ChangePinPageControl" MaxLength="1" HorizontalAlignment="Left" Margin="900,524,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="50" BorderThickness="3" BorderBrush="Black" FontSize="30"/>
+        <Button x:Name="Confirm" Click="PinChange" Content="Confirm" HorizontalAlignment="Right" Margin="0,650,0,0" FontSize="30" Height="50" Width="250" VerticalAlignment="Top"/>
+        <Button x:Name="Cancel" Click="CancelClick" Content="Cancel" HorizontalAlignment="Left" Margin="0,650,0,0" FontSize="30" Height="50" Width="250" VerticalAlignment="Top"/>
+        <Label x:Name="StateInfo" Content="" HorizontalAlignment="Left" Margin="600,624,0,0" VerticalAlignment="Top" FontSize="30"/>
+        <Label x:Name="TITLE" Content="Please Enter a New Pass Code" HorizontalAlignment="Left" Margin="600,300,0,0" VerticalAlignment="Top" FontSize="30"/>
     </Grid>
 </Page>

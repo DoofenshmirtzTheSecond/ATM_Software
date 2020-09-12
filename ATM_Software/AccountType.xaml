@@ -5,14 +5,16 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ATM_Software"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="1080" d:DesignWidth="1920"
       Title="AccountType" Background="White" KeyDown="AccountTypeMenu">
 
     <Grid>
-        <Button x:Name="SavingsAcc" Click="ProceedTransaction" Content="Savings Account" HorizontalAlignment="Left" Margin="202,244,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="CurrentAcc" Click="ProceedTransaction" Content="Current Account" HorizontalAlignment="Left" Margin="202,205,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="Cancel" Click="CancelClick" Content="Cancel" HorizontalAlignment="Left" Margin="227,306,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="CreditCrd" Click="ProceedTransaction" Content="Credit Card" HorizontalAlignment="Left" Margin="202,159,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="Logo" HorizontalAlignment="Left" VerticalAlignment="Top" Height="200" Margin="1239,0,0,0" Width="200"/>
+        <Rectangle x:Name="Secondary" HorizontalAlignment="Center" VerticalAlignment="Center" Height="880" Stroke="Black" Width="1920" Margin="0,200,0,0"/>
+        <Button x:Name="SavingsAcc" Click="ProceedTransaction" Content="Savings Account" HorizontalAlignment="Right" Margin="0,350,0,0" FontSize="30" Height="50" Width="250" VerticalAlignment="Top"/>
+        <Button x:Name="CurrentAcc" Click="ProceedTransaction" Content="Current Account" HorizontalAlignment="Right" Margin="0,500,0,0" FontSize="30" Height="50" Width="250" VerticalAlignment="Top"/>
+        <Button x:Name="Cancel" Click="CancelClick" Content="Cancel" HorizontalAlignment="Left" Margin="0,500,0,0" FontSize="30" Height="50" Width="200" VerticalAlignment="Top"/>
+        <Button x:Name="CreditCrd" Click="ProceedTransaction" Content="Credit Card" HorizontalAlignment="Left" Margin="0,350,0,0" FontSize="30" Height="50" Width="200" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

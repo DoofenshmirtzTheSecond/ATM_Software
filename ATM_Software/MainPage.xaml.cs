@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Configuration;
 
 namespace ATM_Software
 {  
@@ -22,9 +23,16 @@ namespace ATM_Software
     /// </summary>
     public partial class MainPage : Page
     {
+        private MediaPlayer mediaPlayer = new MediaPlayer();
+        public static string Sound;
+        public static string PrimaryTheme { get; set; }
+        public static string SecondaryTheme { get; set; }
+        public static string CompanyLogo { get; set; }
         public MainPage()
         {
             InitializeComponent();
+            HandleThemes();
+            SetLanguage();
             Withdrawal.Focus();
         }
         private void MainMenu_Choice(object sender, KeyEventArgs e)
@@ -67,5 +75,45 @@ namespace ATM_Software
         {
             this.Navigation();
         }
+        private void SetLanguage()
+        {
+            if (this.PutLanguage() == 1)
+            {
+                Account_Balance.Content = Resource1.Account_Balance;
+                Mini_Statement.Content = Resource1.Mini_Statement;
+                Change_Pin.Content = Resource1.Change_Pin;
+                Withdrawal.Content = Resource1.Withdrawal;
+                Cancel.Content = Resource1.Cancel;
+            }
+            else
+            {
+                var uri = new System.Uri(Sound);
+                mediaPlayer.Open(uri);
+                mediaPlayer.Play();
+            }
+        }
+        private void HandleThemes()
+        {
+            PrimaryTheme = ConfigurationManager.AppSettings.Get("PrimaryTheme");
+            SecondaryTheme = ConfigurationManager.AppSettings.Get("SecondaryTheme");
+            CompanyLogo = ConfigurationManager.AppSettings.Get("CompanyLogo");
+            Sound = ConfigurationManager.AppSettings.Get("mpa");
+            this.Background = (Brush)(new BrushConverter().ConvertFrom(PrimaryTheme));
+            Secondary.Fill = (Brush)(new BrushConverter().ConvertFrom(SecondaryTheme));
+            var uri = new System.Uri(CompanyLogo);
+            ImageSource imgSource = new BitmapImage(uri);
+            Logo.Source = imgSource;
+            Mini_Statement.Background = (Brush)(new BrushConverter().ConvertFrom(PrimaryTheme));
+            Mini_Statement.Foreground = (Brush)(new BrushConverter().ConvertFrom(SecondaryTheme));
+            Account_Balance.Background = (Brush)(new BrushConverter().ConvertFrom(PrimaryTheme));
+            Account_Balance.Foreground = (Brush)(new BrushConverter().ConvertFrom(SecondaryTheme));
+            Withdrawal.Background = (Brush)(new BrushConverter().ConvertFrom(PrimaryTheme));
+            Withdrawal.Foreground = (Brush)(new BrushConverter().ConvertFrom(SecondaryTheme));
+            Change_Pin.Background = (Brush)(new BrushConverter().ConvertFrom(PrimaryTheme));
+            Change_Pin.Foreground = (Brush)(new BrushConverter().ConvertFrom(SecondaryTheme));
+            Cancel.Background = (Brush)(new BrushConverter().ConvertFrom(PrimaryTheme));
+            Cancel.Foreground = (Brush)(new BrushConverter().ConvertFrom(SecondaryTheme));
+        }
+        
     }
 }
